@@ -18,16 +18,16 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.blueAccent[800],
         title: Text(
-          'Welcome',
+          'लप्धान्ग',
           style: TextStyle(
-            letterSpacing: 2.0,
+            letterSpacing: 1.0,
             fontWeight: FontWeight.bold,
           ),
         ),
         centerTitle: true,
       ),
       body: Padding(
-        padding: EdgeInsets.all(20.0),
+        padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
         child: Column(
           children: <Widget>[
             Center(
@@ -46,37 +46,51 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(height: 20.0),
-            Text('First Name'),
+            Text(
+              'First Name',
+              textAlign: TextAlign.left,
+            ),
             Divider(
               height: 40.0,
               color: Colors.grey,
             ),
-            Text('Email ID'),
+            Text(
+              'Email ID',
+              textAlign: TextAlign.left,
+            ),
             Divider(
               height: 50.0,
               color: Colors.grey,
             ),
-            Text('Date of Birth'),
+            Text(
+              'Date of Birth',
+              textAlign: TextAlign.left,
+            ),
             Divider(
               height: 50.0,
               color: Colors.grey,
             ),
-            Text('Symbol No.'),
+            Text(
+              'Symbol No.',
+              textAlign: TextAlign.left,
+            ),
             Divider(
               height: 50.0,
               color: Colors.grey,
             ),
             Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                FlatButton.icon(
-                  onPressed: () {},
-                  icon: Icon(Icons.file_upload),
+                Container(
+                  child: Icon(Icons.file_upload),
                 ),
-                FlatButton.icon(
-                  icon: Icon(Icons.payment),
+                Container(
+                  child: Icon(Icons.payment),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 10.0,
             ),
             FlatButton(
               onPressed: () {},
